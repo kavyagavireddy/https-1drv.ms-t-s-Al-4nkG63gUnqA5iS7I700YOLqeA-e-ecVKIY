@@ -1,0 +1,86 @@
+public class StringEx {
+
+	public static void main(String[] args) {
+		String orgname="odigos";
+		String orgname1="odigos";
+		
+		System.out.println(orgname.equals(orgname1));
+        System.out.println(orgname.compareTo(orgname1));
+        System.out.println(orgname==orgname1);
+        
+        String myStr = "Welcome to Odigos";
+        char result = myStr.charAt(1);
+        System.out.println(result);
+        //A char value at the specified index of this string.The first char value is at index 0//
+        
+        String myStr1 = "Java";
+        int result1 = myStr1.codePointAt(0);
+        System.out.println(result1);
+       //the  method returns the Unicode value of the character at the specified index in a string.//
+        
+        String orgname2="odigos";//imuttable
+		System.out.println(orgname2.concat("kakinada"));
+		//comibining of two strings//
+		
+		String myStr2 = "Benguluru";
+		String myStr3 = "Chennai";
+		System.out.println(myStr2.compareTo(myStr3)); //returns-1 because two strings are not equal//
+		
+		String myStr4 = "Developer";
+		String myStr5 = "Developer";
+		System.out.println(myStr4.compareTo(myStr5));//returns 0//
+		
+		String myStr6 = "Hii";
+		String myStr7 = "Hii";
+		String myStr8 = "Another String";
+		System.out.println(myStr6.equals(myStr7)); // Returns true because they are equal
+		System.out.println(myStr7.equals(myStr8)); // false
+		
+		String myStr9 = "Kavya";
+		String myStr10 = "Kavya";
+		String myStr11 = "hello";
+		System.out.println(myStr9.equalsIgnoreCase(myStr10)); // true
+		System.out.println(myStr9.equalsIgnoreCase(myStr11)); // false
+		//both are equal means returns true.not equal means false.//
+		
+		String txt = "Hii kavya";
+		System.out.println(txt.toUpperCase());// it coverts the text into all capital letters//
+		
+		String txt1 = "WELCOME TO ODIGOS";
+		System.out.println(txt1.toLowerCase());//it coverts the text into all small letters//
+		
+		String orgname3="Java Script";
+		String orgname4="java script";
+		System.out.println(orgname3.compareToIgnoreCase(orgname4));// 0 if the string is equal to the other string, ignoring case differences.//
+		
+		String myStr12 = "Kakinada";
+		System.out.println(myStr12.contains("na"));   // true
+		System.out.println(myStr12.contains("Ka"));     // true
+		System.out.println(myStr12.contains("vk"));    // false
+		// method checks whether a string contains a sequence of characters.or not//
+		
+		char[] myStr13 = {'O', 'd', 'i', 'g', 'o','s'};
+		String myStr14 = "";
+		myStr14 = myStr14.copyValueOf(myStr13, 0, 6);
+		System.out.println("Returned String: " + myStr14);
+      //This method returns a new String array and copies the characters into it.//
+
+		String myStr15 = "Developer";
+		System.out.println(myStr15.endsWith("Dev"));   // false
+		System.out.println(myStr15.endsWith("per"));   // true
+      //method checks whether a string ends with the specified character(s).//
+		
+		String myStr16 = "Developer";
+		System.out.println(myStr16.startsWith("Dev"));   // true
+		System.out.println(myStr16.startsWith("per"));   // false
+	//method checks whether a string starts with the specified character(s)//
+	    
+		String myStr17 = "Hello";
+		byte[] result2 = myStr17.getBytes();
+		System.out.println(result2[0]);
+		//the method converts a string into an array of bytes.//
+		
+		
+	}
+
+}
